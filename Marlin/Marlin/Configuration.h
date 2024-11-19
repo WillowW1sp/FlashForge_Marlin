@@ -28,12 +28,12 @@
 
 /* Select one of the printers below */
 //#define FF_INVENTOR_MACHINE
-//#define FF_DREAMER_MACHINE
+#define FF_DREAMER_MACHINE
 //#define FF_DREAMER_NX_MACHINE
 //#define FF_DREMEL_3D20_MACHINE
 
 /* Select black or silver pulley */
-//#define FF_BLACK_PULLEY
+#define FF_BLACK_PULLEY
 //#define FF_SILVER_PULLEY
 
 #if NONE(FF_BLACK_PULLEY, FF_SILVER_PULLEY)
@@ -41,7 +41,7 @@
 #endif
 
 /* Switch left and right extruder */ 
-//#define FF_EXTRUDER_SWAP
+#define FF_EXTRUDER_SWAP
 #if NONE(FF_DREAMER_MACHINE, FF_INVENTOR_MACHINE) && ENABLED(FF_EXTRUDER_SWAP)
   #error FF_EXTRUDER_SWAP works only with Dreamer, Inventor
 #endif
@@ -49,6 +49,7 @@
 /* Select UI type */ 
 //#define USE_OLD_MARLIN_UI
 //#define USE_MKS_UI
+//MKS_UI needs a mod that uses wifi module pinouts. likely wont implement.
 
 /* NX and 3D20 mostly same, but 3D20 does not have heated bed and chamber */
 #if ENABLED(FF_DREMEL_3D20_MACHINE)
@@ -95,7 +96,7 @@
 // @section info
 
 // Author info of this build printed to the host during boot and M115
-#define STRING_CONFIG_H_AUTHOR "(Moonglow, FF Dreamer)" // Who made the changes.
+#define STRING_CONFIG_H_AUTHOR "(WillowWisp, FF Dreamer)" // Who made the changes.
 //#define CUSTOM_VERSION_FILE Version.h // Path from the root directory (no quotes)
 
 /**
@@ -3319,7 +3320,7 @@
 #define SERVO_DELAY { 300 }
 
 // Only power servos during movement, otherwise leave off to prevent jitter
-//#define DEACTIVATE_SERVOS_AFTER_MOVE
+#define DEACTIVATE_SERVOS_AFTER_MOVE
 
 // Edit servo angles with M281 and save to EEPROM with M500
 //#define EDITABLE_SERVO_ANGLES
