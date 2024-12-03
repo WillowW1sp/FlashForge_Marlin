@@ -70,7 +70,21 @@ thermosensor K-couple ADS1118
 #define PCA9632_I2C_SCK                     PF12
 #define PCA9632_I2C_SDA                     PB1
 
+
+
+/* WIFI Pin testing*/
+#define WIFI_MODULE_COM                    3  // Must also set either SERIAL_PORT or SERIAL_PORT_2 to this
+#define WIFI_MODULE_BAUDRATE        250000  // Must use same BAUDRATE as SERIAL_PORT & SERIAL_PORT_2
+#define WIFI_MODULE_RESET_PIN           PG4
+#define WIFI_MODULE_ENABLE_PIN          PG7
+#define WIFI_MODULE_GPIO0_PIN           PD26
+#define WIFI_MODULE_GPIO4_PIN           PD27
+
+
+
 /* SOFTWARE I2C */
+
+
 #if 0
 /* I2C eeprom ( 0xA0 ) and PCA9632 ( 0xC4 ) RGB PWM IC */
 #define I2C_SW_SDA                          PB1
