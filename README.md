@@ -1,3 +1,11 @@
+# Fork of Moonglow's repo
+| Im a bit new to C and rusty with C++ so the changes will be pretty small for a while |
+
+this is mostly just to get some of the small oddities that bugged me fixed in the firmware and try to keep this repo alive for anyone still using the printers in this repo.
+
+
+
+
 #  FlashForge/Dremel Marlin 2.1.2.1
 | Classic UI | Color UI | MKS UI |
 |----------|----------|----------|
