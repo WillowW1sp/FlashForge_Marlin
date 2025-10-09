@@ -113,7 +113,7 @@ void GcodeSuite::G0_G1(TERN_(HAS_FAST_MOVES, const bool fast_move/*=false*/)) {
       if (parser.seen(axis_codes[Z_AXIS]) && !planner.has_blocks_queued()) {
         destination[Z_AXIS] = current_position[Z_AXIS] - (destination[Z_AXIS] - current_position[Z_AXIS]);
       }
-    #endifd
+    #endif
     // === REVERSE MANUAL Z PATCH END ===
 
     #if IS_SCARA

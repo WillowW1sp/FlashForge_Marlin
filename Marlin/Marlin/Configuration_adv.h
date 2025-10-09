@@ -69,9 +69,9 @@
 #define THERMOCOUPLE_MAX_ERRORS 15
 
 // temp fix for inverted manual z control TODO: change comment for prod
-if ENABLED(FF_DREAMER_MACHINE)
-  define REVERSE_MANUAL_Z
-endif
+#if ENABLED(FF_DREAMER_MACHINE)
+  #define REVERSE_MANUAL_Z
+#endif
 
 //
 // Custom Thermistor 1000 parameters

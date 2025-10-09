@@ -733,11 +733,10 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
-    #IF ENABLED(FF_DREAMER_MACHINE)
+    #if ENABLED(FF_DREAMER_MACHINE)
       #define DEFAULT_Kp_LIST { 16.18, 16.18 }
       #define DEFAULT_Ki_LIST { 0.67, 0.67 }
       #define DEFAULT_Kd_LIST { 97.07, 97.07 }
-    #endif
     #else
       #define DEFAULT_Kp_LIST {  34.22,  34.22 }
       #define DEFAULT_Ki_LIST {   2.19,   2.19 }
