@@ -931,8 +931,8 @@
 #if DISABLED(FF_DREMEL_3D20_MACHINE)
   #define THERMAL_PROTECTION_BED   // Enable thermal protection for the heated bed
 #endif
-//#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
-#define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
+#define THERMAL_PROTECTION_CHAMBER // Enable thermal protection for the heated chamber
+//#define THERMAL_PROTECTION_COOLER  // Enable thermal protection for the laser cooling
 
 //===========================================================================
 //============================= Mechanical Settings =========================
