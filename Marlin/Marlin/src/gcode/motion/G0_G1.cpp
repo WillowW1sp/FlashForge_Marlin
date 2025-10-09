@@ -110,7 +110,7 @@ void GcodeSuite::G0_G1(TERN_(HAS_FAST_MOVES, const bool fast_move/*=false*/)) {
     #if ENABLED(REVERSE_MANUAL_Z)
       // Reverse Z direction only for manual jog moves from host (OctoPrint, Cura)
       // Make sure it's a Z move and no print is currently running (no queued blocks)
-      if (parser.seen(axis_codes[Z_AXIS]) && !planner.has_blocks_queued()) {
+      if (parser.seen(axis_codes[Z_AXIS]) && !printingIsActive()) {
         destination[Z_AXIS] = current_position[Z_AXIS] - (destination[Z_AXIS] - current_position[Z_AXIS]);
       }
     #endif
