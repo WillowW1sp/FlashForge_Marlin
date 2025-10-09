@@ -1,4 +1,4 @@
-/**
+F/**
  * Marlin 3D Printer Firmware
  * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
@@ -733,9 +733,16 @@
   #if ENABLED(PID_PARAMS_PER_HOTEND)
     // Specify up to one value per hotend here, according to your setup.
     // If there are fewer values, the last one applies to the remaining hotends.
-    #define DEFAULT_Kp_LIST {  34.22,  34.22 }
-    #define DEFAULT_Ki_LIST {   2.19,   2.19 }
-    #define DEFAULT_Kd_LIST { 133.48, 133.48 }
+    #IF ENABLED(FF_DREAMER_MACHINE)
+      #define DEFAULT_Kp_LIST { 16.18, 16.18 }
+      #define DEFAULT_Ki_LIST { 0.67, 0.67 }
+      #define DEFAULT_Kd_LIST { 97.07, 97.07 }
+    #endif
+    #else
+      #define DEFAULT_Kp_LIST {  34.22,  34.22 }
+      #define DEFAULT_Ki_LIST {   2.19,   2.19 }
+      #define DEFAULT_Kd_LIST { 133.48, 133.48 }
+    #endif  
   #endif
 #else
   #define DEFAULT_Kp  34.22
