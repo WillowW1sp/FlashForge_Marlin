@@ -3782,8 +3782,11 @@
   #define MAIN_MENU_ITEM_3_DESC   "Bed leveling (3-point)"
   #include "BedLevelingScript.h"
 
-  #define MAIN_MENU_ITEM_4_DESC   "Calibrate Touch Screen"
-  #define MAIN_MENU_ITEM_4_GCODE    "M995"
+  #define MAIN_MENU_ITEM_4_DESC   "Bed Leveling (E-Leveler2)"
+  #include "BedLevelingTool.h"
+
+  #define MAIN_MENU_ITEM_5_DESC   "Calibrate Touch Screen"
+  #define MAIN_MENU_ITEM_5_GCODE    "M995"
 #endif
 
 // @section custom config menu
