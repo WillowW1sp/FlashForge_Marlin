@@ -7,7 +7,7 @@ this is mostly just to get some of the small oddities that bugged me fixed in th
 
 |Invert Z direction | E-Leveler2 Script |
 |-----------|----------|
-|Manual Z movement for the FF Dreamer has been inveted while no prints are active| E-Leveler2 script added to user menu (Only functional on the Dreamer as the z inversion causes some issues with the script)|
+|Manual Z movement for the FF Dreamer has been inverted while no prints are active| E-Leveler2 script added to user menu (Only functional on the Dreamer as the z inversion causes some issues with the script)|
 
 
 #  FlashForge/Dremel Marlin 2.1.2.1
