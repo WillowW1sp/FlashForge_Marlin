@@ -57,7 +57,7 @@ then
    fi
 fi
 
-while getopts "m:slohvugd" opt
+while getopts "m:slohvugdz" opt
 do
    case "$opt" in
       m ) machine="$OPTARG" ;;
@@ -79,10 +79,10 @@ do
       d ) flags+="-DFF_MULTI_SD "
           name_postfix+="_sd"
          ;;
-      v ) build_silent="" ;;
-      z ) flags+="DFF_REVERSE_MANUAL_Z"
-         name_postfix+="_reverse_z"
+      z ) flags+="-DFF_REVERSE_MANUAL_Z "
+          name_postfix+="_reverse_z"
          ;;
+      v ) build_silent="" ;;
       ? | h ) usage; exit ;;
    esac
 done
