@@ -26,6 +26,7 @@ function usage()
      -u           old style GUI
      -g           MKS GUI
      -d           Dual SD Support (EXPERIMENTAL!)
+     -z           Reverse manual Z control (EXPERIMENTAL!)
      -v           verbose build
      
    example:
@@ -79,6 +80,9 @@ do
           name_postfix+="_sd"
          ;;
       v ) build_silent="" ;;
+      z ) flags+="DFF_REVERSE_MANUAL_Z"
+         name_postfix+="_reverse_z"
+         ;;
       ? | h ) usage; exit ;;
    esac
 done

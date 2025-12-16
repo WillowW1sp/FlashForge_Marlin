@@ -58,6 +58,9 @@
   #define FF_DREAMER_NX_MACHINE
 #endif
 
+/* Reverse Manual Z tramming*/
+//REVERSE_MANUAL_Z
+
 
 /**
  * Configuration.h

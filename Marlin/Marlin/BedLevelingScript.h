@@ -85,6 +85,7 @@
 "M84"
 #else
 /* original script for FlashForge NX/Dreamer/Inventor/ */
+//TODO: Add script logic for non z reversed machines
   #define MAIN_MENU_ITEM_3_GCODE \
 "G90\n"\
 "M117 Bed leveling started\n"\
