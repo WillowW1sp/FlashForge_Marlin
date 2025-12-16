@@ -28,7 +28,7 @@ this is mostly just to get some of the small oddities that bugged me fixed in th
 - [x] Internal SD card (Not 100% functional yet)
 - [x] USB ( virtual serial port )
 
-#### What not works?
+#### What doesn't work?
 - [ ] FlashForge WiFi module
 
 #### Supported printers:
